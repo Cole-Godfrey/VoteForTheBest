@@ -49,7 +49,7 @@ const isTableEmpty = (tableName) => {
     return row.count === 0;
 };
 
-// Create tables if they don't exist
+//create tables if they don't exist
 db.exec(`
   CREATE TABLE IF NOT EXISTS users (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
